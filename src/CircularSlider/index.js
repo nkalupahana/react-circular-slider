@@ -37,8 +37,6 @@ const styles = ({
     circularSlider: {
         position: 'relative',
         display: 'inline-block',
-        opacity: 0,
-        transition: 'opacity 1s ease-in'
     },
 
     mounted: {
@@ -69,6 +67,7 @@ const CircularSlider = ({
         progressColorTo = '#4990E2',
         progressSize = 8,
         trackColor = '#DDDEFB',
+        animateKnob = true,
         trackSize = 8,
         data = [],
         dataIndex = 0,
@@ -252,6 +251,7 @@ const CircularSlider = ({
                     knobColor={knobColor}
                     trackSize={trackSize}
                     hideKnob={hideKnob}
+                    animateKnob={animateKnob}
                     onMouseDown={onMouseDown}
                 >
                     {children}

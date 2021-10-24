@@ -62,11 +62,11 @@ const Labels = ({
 			{labelBottom || <div style={{ fontSize: labelFontSize }}>{label}</div>}
 			<div
 				style={{ ...styles.value, ...(!labelBottom && styles.bottomMargin) }}>
-				<code>
+				<span>
 					<span style={styles.prepended}>{prependToValue}</span>
 					{value}
 					<span style={styles.appended}>{appendToValue}</span>
-				</code>
+				</span>
 			</div>
 			{labelBottom && <div style={{ fontSize: labelFontSize }}>{label}</div>}
 		</div>

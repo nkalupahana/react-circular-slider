@@ -11,6 +11,7 @@ const Knob = ({
 	onMouseDown,
 	trackSize,
 	children,
+	animateKnob
 }) => {
 	const styles = {
 		knob: {
@@ -71,7 +72,7 @@ const Knob = ({
 				width={`${knobSize}px`}
 				height={`${knobSize}px`}
 				viewBox={`0 0 ${knobSize} ${knobSize}`}>
-				<circle
+				{ animateKnob && <circle
 					style={{ ...styles.animation, ...(isDragging && styles.pause) }}
 					fill={knobColor}
 					fillOpacity='0.2'
@@ -79,7 +80,7 @@ const Knob = ({
 					cx={knobSize / 2}
 					cy={knobSize / 2}
 					r={knobSize / 2}
-				/>
+				/> }
 				<circle
 					fill={knobColor}
 					stroke='none'

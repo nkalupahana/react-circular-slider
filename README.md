@@ -9,14 +9,14 @@ A highly customizable circular slider with no dependencies. See some [live demos
 ## install
 
 ```
-npm install @fseehawer/react-circular-slider
+npm install nkalupahana/react-circular-slider
 ```
 
 ## example
 
 ```javascript
 import React from 'react';
-import CircularSlider from '@fseehawer/react-circular-slider';
+import CircularSlider from 'nkalupahana/react-circular-slider';
 
 const App = () => {
     return (
@@ -33,7 +33,7 @@ Use min and max props to define the range of numbers. Use prependToValue/appendT
 
 ```javascript
 import React from 'react';
-import CircularSlider from '@fseehawer/react-circular-slider';
+import CircularSlider from 'nkalupahana/react-circular-slider';
 
 const App = () => {
     return (
@@ -88,7 +88,7 @@ progressLineCap      | string | round         | progress track cap to be **round
 trackColor           | string | #DDDEFB       | background track color
 trackSize            | number | 8             | background track size
 onChange             | func   | value => {}   | returns label value
-
+animateKnob          | boolean| true          | shows the pulsing grey circle around the knob
 
 ## license
 

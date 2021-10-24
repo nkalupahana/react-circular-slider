@@ -69,6 +69,7 @@ const App = () => {
 					progressColorTo='#009c9a'
 					progressSize={24}
 					trackColor='#eeeeee'
+					animateKnob={false}
 					trackSize={24}>
 					<DragIcon x='22' y='22' width='28px' height='28px' />
 				</CircularSlider>
