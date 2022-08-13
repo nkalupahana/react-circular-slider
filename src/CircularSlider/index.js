@@ -114,8 +114,8 @@ const CircularSlider = ({
         const dashOffset = (degrees / spreadDegrees) * state.dashFullArray;
         degrees = (getSliderRotation(direction) === -1 ? spreadDegrees - degrees : degrees);
 
-        const pointsInCircle = (state.data.length - 1) / spreadDegrees;
-        const currentPoint = Math.round(degrees * pointsInCircle);
+        const pointsInCircle = state.data.length / spreadDegrees;
+        const currentPoint = Math.floor(degrees * pointsInCircle);
 
         if(state.data[currentPoint] !== state.label) {
             // props callback for parent
