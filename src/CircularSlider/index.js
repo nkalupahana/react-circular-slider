@@ -284,6 +284,7 @@ CircularSlider.propTypes = {
     min: PropTypes.number,
     max: PropTypes.number,
     knobColor: PropTypes.string,
+    knobHighlightColor: PropTypes.string,
     knobPosition: PropTypes.string,
     hideKnob: PropTypes.bool,
     knobDraggable: PropTypes.bool,
