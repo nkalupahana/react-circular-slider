@@ -6,6 +6,7 @@ const Knob = ({
 	isDragging,
 	knobPosition,
 	knobColor,
+	knobHighlightColor,
 	knobSize,
 	hideKnob,
 	onMouseDown,
@@ -32,7 +33,7 @@ const Knob = ({
 
 		animation: {
 			transformOrigin: '50% 50%',
-			animationTimingFunction: 'ease-out',
+			animationTimingFunction: 'ease-in-out',
 			animationDuration: '1500ms',
 			animationIterationCount: 'infinite',
 			animationName: 'pulse',
@@ -74,7 +75,7 @@ const Knob = ({
 				viewBox={`0 0 ${knobSize} ${knobSize}`}>
 				{ animateKnob && <circle
 					style={{ ...styles.animation, ...(isDragging && styles.pause) }}
-					fill={knobColor}
+					fill={knobHighlightColor}
 					fillOpacity='0.2'
 					stroke='none'
 					cx={knobSize / 2}
@@ -98,6 +99,7 @@ Knob.propTypes = {
 	isDragging: PropTypes.bool,
 	knobPosition: PropTypes.object,
 	knobColor: PropTypes.string,
+	knobHighlightColor: PropTypes.string,
 	knobRadius: PropTypes.number,
 	knobSize: PropTypes.number,
 	trackSize: PropTypes.number,

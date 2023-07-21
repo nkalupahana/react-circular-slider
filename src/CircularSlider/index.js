@@ -51,6 +51,7 @@ const CircularSlider = ({
         min = 0,
         max = 360,
         knobColor = '#4e63ea',
+        knobHighlightColor = '#4e63ea',
         knobSize = 36,
         knobPosition = 'top',
         labelColor = '#272b77',
@@ -249,6 +250,7 @@ const CircularSlider = ({
                     knobPosition={{ x: state.knob.x, y: state.knob.y }}
                     knobSize={knobSize}
                     knobColor={knobColor}
+                    knobHighlightColor={knobHighlightColor}
                     trackSize={trackSize}
                     hideKnob={hideKnob}
                     animateKnob={animateKnob}
@@ -282,6 +284,7 @@ CircularSlider.propTypes = {
     min: PropTypes.number,
     max: PropTypes.number,
     knobColor: PropTypes.string,
+    knobHighlightColor: PropTypes.string,
     knobPosition: PropTypes.string,
     hideKnob: PropTypes.bool,
     knobDraggable: PropTypes.bool,
