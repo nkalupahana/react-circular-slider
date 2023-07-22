@@ -88,6 +88,7 @@ const Knob = ({
 					cx={knobSize / 2}
 					cy={knobSize / 2}
 					r={(knobSize * 2 / 3) / 2}
+					id='react-circular-slider-knob'
 				/>
 				{children ? customKnobIcon() : defaultKnobIcon()}
 			</svg>
